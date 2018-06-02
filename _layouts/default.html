@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-  <head>
-    {% include head.html %}
-  </head>
+<head>
+	{% include head.html %}
+</head>
 
-  <body>
+<body>
 
-    <header>
-      {% include header.html %}
-    </header>
+	<header>
+		{% include header.html %}
+	</header>
 
-    <main>
-      {{ content }}
-    </main>
+	<main>
+		<section>
 
-    <footer>
-      {% include footer.html %}
-    </footer>
+			<div class="categories">
 
-  </body>
+				<header>
+
+					<h1>Witaj na naszym serwerze!</h1>
+					<p>Szukasz serwera do porozmawiania z kolegami? Spokojnej, miłej atmosfery? Pomocnej Administracji? Jeśli tak zapraszam
+						Cię na mój serwer.</p>
+
+				</header>
+
+			</div>
+
+		</section>
+
+		{{ content }}
+	</main>
+
+	<footer>
+		{% include footer.html %}
+	</footer>
+
+</body>
 
 </html>
