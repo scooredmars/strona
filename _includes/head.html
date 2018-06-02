@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="{% if page.description %}{{ page.description }} - {{ site.altname }}{% else %}{{ site.description }}{% endif %}">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+
+<title>{% if page.title %}{{ page.title }} | RedPower{% else %}{{ site.title }}{% endif %}</title>
+
+<meta name="DC.Title" content="{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}">
+<meta name="DC.Creator" content="{{ site.author }}">
+<meta name="DC.Subject" content="{{ site.altname }}">
+<meta name="DC.Description" content="{% if page.description %}{{ page.description }} - {{ site.altname }}{% else %}{{ site.description }}{% endif %}">
+<meta name="DC.Language" content="en">
+<meta name="DC.Rights" content="{{ site.url }}">
+
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+
+<meta content="website" property="og:type">
+
+{% if page.img %}
+  <meta content="{{ site.url }}{{ page.img }}" property="og:image">
+{% else %}
+  <meta property="og:image" content="{{ site.url }}/data/img/fb_0.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+{% endif %}
+
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{{ site.altname }} - Developer Website">
+
+<script type='application/ld+json'>
+{
+    "@context": "http://www.schema.org",
+    "@type": "WebSite",
+    "alternateName": "{{ site.altname }}",
+    "url": "{{ site.url }}{{ page.url | replace:'index.html',''}}",
+    "name": "{% if page.title %}{{ page.title }} | {{ site.author }}{% else %}{{ site.title }}{% endif %}",
+    "description": "{% if page.description %}{{ page.description }} - {{ site.altname }}{% else %}{{ site.description }}{% endif %}"
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="/data/css/main.css">
