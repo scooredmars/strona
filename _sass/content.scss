@@ -1,6 +1,5 @@
 $bottom-radius: 24px;
 .container {
-  padding: 1.25em;
   margin-top: -$nav-bottom-border;
   margin-bottom: 3em;
   border-left: $nav-bottom-border solid $red_1;
@@ -9,6 +8,20 @@ $bottom-radius: 24px;
   border-bottom-left-radius: $bottom-radius;
   border-bottom-right-radius: $bottom-radius;
   background-color: $dark_0;
+}
+
+.content {
+  padding: 1.25em;
+}
+
+.message {
+  margin: -4px;
+  padding: 1em;
+  background-color: $red_1;
+}
+
+.message:last-child {
+  border-radius: inherit;
 }
 
 @media screen and (max-width: $max-width) {
