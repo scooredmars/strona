@@ -14,7 +14,6 @@ $max-width-big: 1050px;
 html,
 body {
   margin: 0;
-  overflow-x: hidden;
 }
 
 body {
@@ -32,6 +31,10 @@ a {
   margin: 0 auto;
   max-width: $max-width;
   box-sizing: border-box;
+}
+
+.centered {
+  text-align: center;
 }
 
 @media screen and (max-width: $mobile-width) {

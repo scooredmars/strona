@@ -1,35 +1,49 @@
+$nav_linked_border: 4px;
 .linked {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  z-index: 1;
-  .links {
+  .aligner {
     text-align: right;
+  }
+  .links {
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: right;
+    height: 236px;
     a {
+      z-index: 1;
+      position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -o-sticky;
+      position: -ms-sticky;
+      position: sticky;
+      top: 0px;
+      bottom: 10px;
       color: #bbb;
       display: inline-block;
       padding: .5em .9em;
       transition: .3s;
+      margin-bottom: .8em;
       text-decoration: none;
-      border-right: 2px solid $red_0;
-      border-bottom: 2px solid $red_0;
+      border-right: $nav_linked_border solid $red_0;
+      border-bottom: $nav_linked_border solid $red_0;
       background-color: $dark_0;
     }
     a:first-child {
-      border-left: 2px solid $red_0;
+      border-left: $nav_linked_border solid $red_0;
     }
     a:hover {
-      color: #fff;
-      border-color: $red_2;
+      color: #fff; // border-color: $red_2;
       background-color: $red_2;
     }
     a.facebook:hover {
-      border-color: #3b5998;
+      // border-color: #3b5998;
       background-color: #3b5998;
     }
     a.youtube:hover {
-      border-color: #ff1422;
+      // border-color: #ff1422;
       background-color: #ff1422;
     }
   }
@@ -90,21 +104,40 @@ $nav-bottom-border: 4px;
   .aligner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .left,
+  .right {
+    flex-basis: 45%;
+  }
+  .left,
+  .right,
+  .middle {
+    display: flex;
+  }
+  .middle {
+    flex: 1;
+  }
+  .right {
+    text-align: right;
   }
   .item {
     flex: 1;
     color: #d1d1d1;
-    padding: .9em 1em;
+    display: flex;
+    align-items: center;
+    padding: .9em .6em;
     font-size: 1.2em;
     text-align: center;
     transition: .3s;
     font-weight: bold;
     text-decoration: none;
+    justify-content: center;
     border-bottom: $nav-bottom-border solid rgba(0, 0, 0, 0);
     margin-bottom: -$nav-bottom-border;
   }
-  .middle.item {
-    flex: 0;
+  .middle .item {
+    padding: .9em;
   }
   .item:hover {
     color: #ffffff;
@@ -133,5 +166,14 @@ $nav-bottom-border: 4px;
 @media screen and (max-width: $mobile-width) {
   header .center {
     margin-top: -60px;
+  }
+  .navbar {
+    .middle {
+      display: none;
+    }
+    .left,
+    .right {
+      flex-basis: 100%;
+    }
   }
 }

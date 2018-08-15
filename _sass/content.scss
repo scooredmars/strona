@@ -11,12 +11,6 @@ $bottom-radius: 24px;
   background-color: $dark_0;
 }
 
-.container h1:first-child,
-.container h2:first-child,
-.container h3:first-child {
-  margin-top: 0;
-}
-
 @media screen and (max-width: $max-width) {
   .container {
     border: none;
