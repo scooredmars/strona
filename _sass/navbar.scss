@@ -58,12 +58,6 @@ header .center:hover {
   filter: saturate(1.2);
 }
 
-header .center:hover~nav .navbar .middle.item {
-  color: #ffffff;
-  background-color: $red_2;
-  border-bottom-color: $red_1;
-}
-
 .logo {
   display: inline-block;
   img:first-child {
