@@ -1,0 +1,26 @@
+$bottom-radius: 24px;
+.container {
+  padding: 1.25em;
+  margin-top: -$nav-bottom-border;
+  margin-bottom: 3em;
+  border-left: $nav-bottom-border solid $red_1;
+  border-right: $nav-bottom-border solid $red_1;
+  border-bottom: $nav-bottom-border solid $red_1;
+  border-bottom-left-radius: $bottom-radius;
+  border-bottom-right-radius: $bottom-radius;
+  background-color: $dark_0;
+}
+
+.container h1:first-child,
+.container h2:first-child,
+.container h3:first-child {
+  margin-top: 0;
+}
+
+@media screen and (max-width: $max-width) {
+  .container {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}

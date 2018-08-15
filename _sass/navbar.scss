@@ -1,7 +1,67 @@
+.linked {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  .links {
+    text-align: right;
+    a {
+      color: #bbb;
+      display: inline-block;
+      padding: .5em .9em;
+      transition: .3s;
+      text-decoration: none;
+      border-right: 2px solid $red_0;
+      border-bottom: 2px solid $red_0;
+      background-color: $dark_0;
+    }
+    a:first-child {
+      border-left: 2px solid $red_0;
+    }
+    a:hover {
+      color: #fff;
+      border-color: $red_2;
+      background-color: $red_2;
+    }
+    a.facebook:hover {
+      border-color: #3b5998;
+      background-color: #3b5998;
+    }
+    a.youtube:hover {
+      border-color: #ff1422;
+      background-color: #ff1422;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .linked {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $max-width) {
+  .linked .links a:last-child {
+    border-right: none;
+  }
+}
+
 header .center {
   height: 236px;
   display: block;
   text-align: center;
+  transition: .3s;
+}
+
+header .center:hover {
+  filter: saturate(1.2);
+}
+
+header .center:hover~nav .navbar .middle.item {
+  color: #ffffff;
+  background-color: $red_2;
+  border-bottom-color: $red_1;
 }
 
 .logo {
@@ -31,18 +91,16 @@ header .center {
 
 $nav-bottom-border: 4px;
 .navbar {
-  width: 100%;
   background-color: $red_1;
   border-bottom: $nav-bottom-border solid $dark_0;
   .aligner {
-    margin: 0 auto;
     display: flex;
-    max-width: $max-width;
+    flex-wrap: wrap;
   }
   .item {
     flex: 1;
     color: #d1d1d1;
-    padding: 14px 16px;
+    padding: .9em 1em;
     font-size: 1.2em;
     text-align: center;
     transition: .3s;
@@ -50,6 +108,9 @@ $nav-bottom-border: 4px;
     text-decoration: none;
     border-bottom: $nav-bottom-border solid rgba(0, 0, 0, 0);
     margin-bottom: -$nav-bottom-border;
+  }
+  .middle.item {
+    flex: 0;
   }
   .item:hover {
     color: #ffffff;
@@ -59,7 +120,7 @@ $nav-bottom-border: 4px;
 }
 
 @media screen and (max-width: 450px) {
-  .logo{
+  .logo {
     img:first-child,
     img:last-of-type {
       display: none;
@@ -70,20 +131,13 @@ $nav-bottom-border: 4px;
     }
   }
   header .center {
-    margin-top: -15vw!important;
+    margin-top: -15vw !important;
     height: 55vw;
   }
-
 }
 
 @media screen and (max-width: $mobile-width) {
   header .center {
     margin-top: -60px;
-  }
-}
-
-@media screen and (min-width: $big-width) {
-  .navbar .aligner {
-    max-width: $max-width-big;
   }
 }

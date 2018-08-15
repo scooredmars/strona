@@ -1,0 +1,22 @@
+.footer {
+  color: #ccc;
+  margin-top: 1em;
+  background-color: $red_1;
+
+  .upper {
+    padding: 1em .5em;
+  }
+
+  .lower {
+    display: flex;
+    padding: 1em .5em;
+    justify-content: center;
+    background-color: $red_0;
+  }
+}
+
+@media screen and (max-width: $max-width) {
+  .footer {
+    margin-top: 0;
+  }
+}

@@ -18,8 +18,19 @@ body {
 }
 
 body {
+  color: #bbb;
   font-size: 16px;
   background-color: $dark_1;
+}
+
+a {
+  outline: none;
+}
+
+.aligner {
+  margin: 0 auto;
+  max-width: $max-width;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: $mobile-width) {
@@ -31,5 +42,8 @@ body {
 @media screen and (min-width: $big-width) {
   body {
     font-size: 17px;
+  }
+  .aligner {
+    max-width: $max-width-big;
   }
 }
