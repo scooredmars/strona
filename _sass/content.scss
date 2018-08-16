@@ -1,0 +1,36 @@
+$bottom-radius: 24px;
+.container {
+  margin-top: -$nav-bottom-border;
+  margin-bottom: 3em;
+  border-left: $nav-bottom-border solid $red_1;
+  border-right: $nav-bottom-border solid $red_1;
+  border-bottom: $nav-bottom-border solid $red_1;
+  border-bottom-left-radius: $bottom-radius;
+  border-bottom-right-radius: $bottom-radius;
+  background-color: $dark_0;
+}
+
+.content {
+  padding: 1.25em;
+}
+
+.message {
+  margin: -4px;
+  padding: 1em;
+  background-color: $red_1;
+}
+
+.message:last-child {
+  border-radius: inherit;
+}
+
+@media screen and (max-width: $max-width) {
+  .container {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  .message {
+    margin: -4px 0;
+  }
+}

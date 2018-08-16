@@ -1,25 +1,26 @@
-# Welcome to Jekyll!
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Serwer TeamSpeak - RedPower
-description: >- # this means to ignore newlines until "baseurl:"
-  Opis
-altname: TS3 server
+title: RedPower - make TEAMSPEAK GREAT again
+description: >-
+  Najlepszy serwer TeamSpeak na Śląsku!
+  Lepszy niż gorzoła twoich szwigrów!
+  Zaproś swojo czelodka - RedPower.me
+altname: RedPower - TeamSpeak3
 author: ScooredMars
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://redpower.me" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://redpower.me"
 
-# Build settings
+
 markdown: kramdown
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - README.md
+
+plugins:
+  - jekyll-press
+
+jekyll-press:
+  exclude: [ 'robots.txt' ]
+  js_options: {}
+  css_options: {}
+  html_options: {}

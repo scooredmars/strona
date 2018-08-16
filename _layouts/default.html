@@ -8,27 +8,13 @@
 <body>
 
 	<header>
-		{% include header.html %}
+		{% include navbar.html %}
 	</header>
 
 	<main>
-		<section>
-
-			<div class="categories">
-
-				<header>
-
-					<h1>Witaj na naszym serwerze!</h1>
-					<p>Szukasz serwera do porozmawiania z kolegami? Spokojnej, miłej atmosfery? Pomocnej Administracji? Jeśli tak zapraszam
-						Cię na mój serwer.</p>
-
-				</header>
-
-			</div>
-
-		</section>
-
-		{{ content }}
+		<div class="aligner container">
+			{{ content }}
+		</div>
 	</main>
 
 	<footer>
