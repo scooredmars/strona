@@ -16,8 +16,18 @@ $bottom-radius: 24px;
 
 .message {
   margin: -4px;
-  padding: 0.40em;
+  padding: .4em;
   background-color: $red_1;
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: .3em 0;
+  }
+}
+
+.padded.message {
+  padding: 1em;
 }
 
 .message:last-child {
