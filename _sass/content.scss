@@ -34,6 +34,48 @@ $bottom-radius: 24px;
   border-radius: inherit;
 }
 
+/* Image list styling */
+
+h1.underline {
+  border-bottom: $nav-bottom-border solid $red_1;
+  margin: 0 -.625em;
+  margin-bottom: .3em;
+  padding-bottom: 20px;
+}
+
+.list {
+  .item {
+    display: flex;
+    padding: 1em .5em;
+
+    .image {
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 100px;
+        max-height: 100px;
+      }
+
+      h2 {
+        margin: .2em 0;
+      }
+    }
+
+    .description {
+      flex: 1;
+      flex-grow: 1;
+      // Vertical align role description
+      // align-self: center;
+    }
+  }
+}
+
 @media screen and (max-width: $max-width) {
   .container {
     border: none;
@@ -43,4 +85,5 @@ $bottom-radius: 24px;
   .message {
     margin: -4px 0;
   }
+  // TODO: Tutaj repsponsywne style
 }

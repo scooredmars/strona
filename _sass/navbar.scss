@@ -157,23 +157,3 @@ $nav-bottom-border: 4px;
     }
   }
 }
-/*test*/
-.entryimg img {
-  width: 60px;
-  height: 60px;
-}
-.wrapper{
-  display: flex;
-  align-items: center;
-}
-.aside-1 {
-  background: gold;
-}
-.main {
-  text-align: left;
-  background: rgb(86, 184, 6);
-}
-@media all and (min-width: 800px) {
-  .aside-1 { order: 1; }
-  .main    { order: 2; }
-}
