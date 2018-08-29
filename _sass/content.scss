@@ -46,7 +46,7 @@ h1.underline {
 .list {
   .item {
     display: flex;
-    padding: 1em .5em;
+    padding: 1em 3em;
 
     .image {
       display: flex;
@@ -57,7 +57,7 @@ h1.underline {
         display: block;
         width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: 1 auto;
         max-width: 100px;
         max-height: 100px;
       }
