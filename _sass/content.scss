@@ -77,6 +77,23 @@ h1.underline {
   }
 }
 
+.list2{   //porawic tabele z kontaktem!
+  .item{
+    display: flex;
+    padding: 5em 7em;
+  }
+  .icon{
+    display: flex;
+    padding: 0 2em;
+    flex-flow: column;
+    text-align: center;
+    font-size: 1em;
+  a{
+    color: #bbb;
+    }
+  }
+}
+
 @media screen and (max-width: $max-width) {
   .container {
     border: none;
