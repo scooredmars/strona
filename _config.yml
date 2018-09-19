@@ -7,6 +7,9 @@ altname: RedPower - TeamSpeak3
 author: ScooredMars
 url: "https://redpower.me"
 
+email: admin@redpower.me
+ts3-root: ts3server://redpower.me
+ts3-admin: ts3server://redpower.me?channel=%5Bcspacer25%5D%E2%80%A2%C2%BB%20%E3%80%8E%20CYNTRUM%20ROBOTY%20%E3%80%8F%20%C2%AB%E2%80%A2%2FWerkszela%2FTukej%20zadupiom%2FTukej%20czekej%20a%C5%BC%20przyjda%20%5BON%5D
 
 markdown: kramdown
 
