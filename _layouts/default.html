@@ -5,21 +5,27 @@
 	{% include head.html %}
 </head>
 
-<body>
+<body class="footliner">
 
-	<header>
-		{% include navbar.html %}
-	</header>
+	<div class="item top">
+		<header>
+			{% include navbar.html %}
+		</header>
 
-	<main>
-		<div class="aligner container">
-			{{ content }}
-		</div>
-	</main>
+		<main>
+			<div class="aligner container">
+				{{ content }}
+			</div>
+		</main>
+	</div>
 
-	<footer>
-		{% include footer.html %}
-	</footer>
+	<div class="item"></div>
+
+	<div class="item bottom">
+		<footer>
+			{% include footer.html %}
+		</footer>
+	</div>
 
 </body>
 
