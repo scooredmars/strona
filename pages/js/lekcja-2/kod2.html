@@ -1,0 +1,28 @@
+---
+layout: listing
+
+permalink: /js/lekcja-2/kod2/
+css: [
+"/static/css/js-lekcja1-2.css",
+]
+---
+
+<div class="container">
+<h1> JS </h1>
+<div class="native js-second">
+{% highlight js %}
+var imie;
+imie = prompt("Jak masz na imie?");
+
+alert("Witaj " + imie + "!!!Dobrze, ze jestes :)");
+
+var decyzja;
+decyzja = confirm("Czy chcesz przejsc do mojej strony?");
+
+if (decyzja)
+document.write("Otwieram strone ...");
+else
+document.write("Przykro mi. Przemysl to jeszcze.");
+{% endhighlight %}
+	</div>
+</div>
