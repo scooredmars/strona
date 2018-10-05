@@ -1,0 +1,25 @@
+{% if page.title %}
+	{% capture title %}
+		{{ page.title }} Szkolne prace
+	{% endcapture %}
+{% else %}
+	{% assign title=site.title %}
+{% endif %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+<meta name="robots" content="noindex, nofollow">
+
+<title>{{ title }}</title>
+
+<link rel="stylesheet" type="text/css" href="/static/css/listings.css">
+<link rel="icon" type="image/png" href="/static/img/favicon/favicon.png">
+
+{% if page.css %}
+	{% for css in page.css %}
+		<link rel="stylesheet" type="text/css" href="{{ css }}">
+	{% endfor %}
+{% endif  %}
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">

@@ -137,38 +137,6 @@ $nav-bottom-border: 4px;
     justify-content: center;
   }
 
-  .dropdown {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    .inner {
-      top: 100%;
-      left: 0;
-      min-width: 100%;
-
-      position: absolute;
-      transition: max-height .3s ease-in-out;
-      max-height: 0px;
-      overflow: hidden;
-
-      background-color: $red_0;
-
-      .item {
-        font-size: 1em;
-      }
-    }
-
-  }
-
-  .dropdown:hover {
-    .inner {
-      max-height: 1000px;
-    }
-  }
-
   .item:hover {
     color: #ffffff;
     background-color: $red_2;

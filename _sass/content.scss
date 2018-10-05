@@ -13,7 +13,8 @@ $bottom-radius: 24px;
 
 .content {
   padding: 1.25em;
-  .info{
+
+  .info {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -113,6 +114,65 @@ h1.underline {
     p {
       margin: .5em 0;
     }
+  }
+}
+
+ul>li>a {
+  color: #bbb;
+  display: inline-block;
+  padding: .75em .95em .8em;
+  transition: .3s;
+  margin-bottom: .8em;
+  text-decoration: none;
+}
+
+ul>li>a:hover {
+  color: #fff; // border-color: $red_2;
+  background-color: $red_2;
+}
+
+.dropdown {
+  flex: 1;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: fit-content;
+
+  .inner {
+    transition: max-height .3s ease-in-out;
+    max-height: 0px;
+    overflow: hidden;
+  }
+
+  .item {
+    font-size: 1em;
+    color: #bbb;
+    text-decoration: none;
+  }
+
+  .item:hover {
+    color: #ffffff;
+    background-color: $red_2;
+  }
+
+  li>a {
+    color: #bbb;
+    display: inline-block;
+    padding: .75em .95em .8em;
+    transition: .3s;
+    margin-bottom: .8em;
+    text-decoration: none;
+  }
+
+  li>a:hover {
+    color: #fff; // border-color: $red_2;
+    background-color: $red_2;
+  }
+}
+
+.dropdown:hover {
+  .inner {
+    max-height: 100px;
   }
 }
 

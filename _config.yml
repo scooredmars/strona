@@ -1,16 +1,10 @@
-title: RedPower - make TEAMSPEAK GREAT again
-description: >-
-  Najlepszy serwer TeamSpeak na Śląsku!
-  Lepszy niż gorzoła twoich szwigrów!
-  Zaproś swojo czelodka - RedPower.me
-altname: RedPower - TeamSpeak3
+title: Projekty szkolne
+description: Zbiór zadań szkolnych.
+altname: School projects
 author: ScooredMars
-url: "https://redpower.me"
+url: "https://dev.redpower.me"
 
-bank: xx 1050 1386 1000 0092 2252 8961
 email: admin@redpower.me
-ts3-root: ts3server://redpower.me
-ts3-admin: ts3server://redpower.me?channel=%5Bcspacer25%5D%E2%80%A2%C2%BB%20%E3%80%8E%20CYNTRUM%20ROBOTY%20%E3%80%8F%20%C2%AB%E2%80%A2%2FWerkszela%2FTukej%20zadupiom%2FTukej%20czekej%20a%C5%BC%20przyjda%20%5BON%5D
 
 markdown: kramdown
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	{% include head_listing.html %}
+</head>
+
+<body class="footliner">
+
+	<div class="item top">
+		<main>
+			<div class="aligner container">
+				{{ content }}
+			</div>
+		</main>
+	</div>
+
+	<div class="item"></div>
+
+	<div class="item bottom">
+		<footer>
+			{% include footer.html %}
+		</footer>
+	</div>
+
+</body>
+
+</html>
