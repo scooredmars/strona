@@ -1,0 +1,27 @@
+---
+layout: listing
+
+permalink: /js/lekcja-4/kod1/
+css: [
+"/static/css/js-lekcja1-2.css",
+]
+---
+
+<div class="container">
+	<h1> JS </h1>
+	<div class="native js-second">
+{% highlight js %}
+var a = parseInt(prompt("Podaj 1 liczbe: "));
+var b = parseInt(prompt("Podaj 2 liczbe: "));
+var c = parseInt(prompt("Podaj 3 liczbe: "));
+
+if (a + b> c && a + c> b &&b + c > a)
+{
+document.write("Mozna zbudowac trojkat");
+}
+else{
+document.write("Nie mozna zbudowac trojkata");
+}
+{% endhighlight %}
+	</div>
+</div>
