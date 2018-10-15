@@ -1,0 +1,30 @@
+---
+---
+body {
+  background-color: #534c4c;
+  color: #efefef;
+}
+ul {
+  list-style-type: disc;
+}
+#i1 {
+  list-style-type: square;
+}
+#i2 {
+  list-style-type: circle;
+}
+ol {
+  list-style-type: decimal;
+}
+#p1 {
+  list-style-type: lower-alpha;
+}
+#p2 {
+  list-style-type: upper-alpha;
+}
+#p3 {
+  list-style-type: lower-roman;
+}
+#p4 {
+  list-style-type: upper-roman;
+}
