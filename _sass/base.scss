@@ -34,6 +34,19 @@ a {
   box-sizing: border-box;
 }
 
+.main {
+  display: flex;
+  max-width: $max-width-big;
+  margin: 0 auto;
+}
+
+.counter {
+  background-color: rgba(44, 44, 44, 0.575);
+  width: 20%;
+  margin-top: -4px;
+  max-height: 300px;
+}
+
 .footliner {
   display: flex;
   align-items: center;
