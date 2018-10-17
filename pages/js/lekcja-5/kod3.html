@@ -1,0 +1,37 @@
+---
+layout: listing
+
+permalink: /js/lekcja-5/kod3/
+css: [
+"/static/css/js-lekcja1-2.css",
+]
+---
+
+<div class="container">
+	<h1> JS </h1>
+	<div class="native js-second">
+{% highlight js %}
+document.write("Liczenie silnej poprzez for </br>");
+var b = parseInt(prompt("Podaj liczbe dla for: "));
+var silnia = 1;
+for (a = 1; a <= b; a++) {
+  var silnia = silnia * a;
+}
+document.write(silnia);
+document.write("</br>");
+document.write("</br>");
+
+
+document.write("Liczenie silnej poprzez while </br>");
+var b = parseInt(prompt("Podaj liczbe dla while: "));
+var a = 1;
+var silnia = 1;
+while (a <= b) {
+  var silnia = silnia * a;
+  a++;
+}
+document.write(silnia);
+
+{% endhighlight %}
+	</div>
+</div>
