@@ -1,0 +1,50 @@
+---
+---
+body{
+  background-color: rgb(78, 75, 75);
+}
+table {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-spacing: 0px;
+}
+
+td {
+  border: 1px solid black;
+}
+
+#t1 {
+  background-color: red;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  vertical-align: center;
+}
+
+#t2 {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#t3 {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+
+li {
+  color: white;
+  list-style-type: square;
+}
