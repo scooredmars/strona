@@ -1,0 +1,25 @@
+---
+layout: listing
+
+permalink: /js/lekcja-6/kod5/
+css: [
+"/static/css/js-lekcja1-2.css",
+]
+---
+
+<div class="container">
+<h1> JS </h1>
+<div class="native js-second">
+{% highlight js %}
+document.write("Liczenie sredniej arytmetycznej </br>");
+var n = parseInt(prompt("Podaj ilosc liczb: "));
+var suma = 0;
+for (a = 1; a <= n; a++) {
+  var b = parseInt(prompt("Podaj dane liczby: "))
+  suma += b / n;
+}
+document.write("Wynik : " + suma + "");
+
+{% endhighlight %}
+	</div>
+</div>

@@ -1,0 +1,25 @@
+---
+layout: listing
+
+permalink: /js/lekcja-6/kod4/
+css: [
+"/static/css/js-lekcja1-2.css",
+]
+---
+
+<div class="container">
+<h1> JS </h1>
+<div class="native js-second">
+{% highlight js %}
+document.write("Podawanie liczby i jej potegi </br>");
+var x = parseInt(prompt("Podaj liczbe: "));
+var n = parseInt(prompt("Podaj potege: "));
+wynik = 1;
+for (x = 1; x <= n; x++) {
+  wynik = wynik * n;
+  document.write(wynik + ", ");
+}
+
+{% endhighlight %}
+	</div>
+</div>
