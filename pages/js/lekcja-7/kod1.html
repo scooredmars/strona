@@ -1,0 +1,27 @@
+---
+layout: listing
+
+permalink: /js/lekcja-7/kod1/
+css: [
+"/static/css/js-lekcja1-2.css",
+]
+---
+
+<div class="container">
+<h1> JS </h1>
+<div class="native js-second">
+{% highlight js %}
+document.write("Obliczanie funkcji liniowej </br>");
+var a = parseInt(prompt("Podaj a: "));
+var b = parseInt(prompt("Podaj b: "));
+var xpocz = parseInt(prompt("Podaj xpocz: "));
+var xkon = parseInt(prompt("Podaj xkon: "));
+var x;
+var wynik;
+for (x = xpocz; x <= xkon; x++) {
+  wynik = (a * x) + b;
+  document.write(wynik + "</br>");
+}
+{% endhighlight %}
+	</div>
+</div>
