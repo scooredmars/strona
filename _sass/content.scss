@@ -3,12 +3,12 @@ $bottom-radius: 24px;
 .container {
   margin-top: -$nav-bottom-border;
   margin-bottom: 3em;
-  border-left: $nav-bottom-border solid $red_1;
-  border-right: $nav-bottom-border solid $red_1;
-  border-bottom: $nav-bottom-border solid $red_1;
+  border-left: $nav-bottom-border solid $color_4;
+  border-right: $nav-bottom-border solid $color_4;
+  border-bottom: $nav-bottom-border solid $color_4;
   border-bottom-left-radius: $bottom-radius;
   border-bottom-right-radius: $bottom-radius;
-  background-color: $dark_0;
+  background-color: $color_1;
   width: 80%;
 }
 
@@ -24,7 +24,7 @@ $bottom-radius: 24px;
 .message {
   margin: -4px;
   padding: .4em;
-  background-color: $red_1;
+  background-color: $color_4;
 
   h1,
   h2,
@@ -45,7 +45,7 @@ $bottom-radius: 24px;
 /* Image list styling */
 
 h1.underline {
-  border-bottom: $nav-bottom-border solid $red_1;
+  border-bottom: $nav-bottom-border solid $color_4;
   margin: 0 -.625em;
   margin-bottom: .3em;
   padding-bottom: 20px;
@@ -108,7 +108,7 @@ h1.underline {
 
     a:hover {
       color: #fff;
-      background-color: $red_2;
+      background-color: $color_5;
     }
 
     p {

@@ -36,7 +36,7 @@ $nav_linked_border: 4px;
 
     a:hover {
       color: #fff; // border-color: $red_2;
-      background-color: $red_2;
+      background-color: $color_5;
     }
   }
 }
@@ -83,7 +83,7 @@ header .center:hover {
   }
 
   img:last-of-type {
-    width: 236px;
+    width: auto; //236px
     margin-right: -236px;
   }
 
@@ -97,8 +97,8 @@ header .center:hover {
 $nav-bottom-border: 4px;
 
 .navbar {
-  background-color: $red_1;
-  border-bottom: $nav-bottom-border solid $dark_0;
+  background-color: $color_4;
+  border-bottom: $nav-bottom-border solid $color_6;
 
   .aligner {
     display: flex;
@@ -154,7 +154,7 @@ $nav-bottom-border: 4px;
       max-height: 0px;
       overflow: hidden;
 
-      background-color: $red_0;
+      background-color: $color_3;
 
       .item {
         font-size: 1em;
@@ -171,8 +171,8 @@ $nav-bottom-border: 4px;
 
   .item:hover {
     color: #ffffff;
-    background-color: $red_2;
-    border-bottom-color: $red_1;
+    background-color: $color_5;
+    border-bottom-color: $color_4;
   }
 }
 

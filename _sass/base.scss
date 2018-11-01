@@ -1,16 +1,32 @@
 // Some primary colors
-$dark_0: #121212;
-$dark_1: #151515;
-$red_0: #4e000f;
-$red_1: #570112;
-$red_2: #96011d;
+$color_1: #121212; //description-background
+$color_2: #151515; //background
+$color_3: #4e000f; //footer-bottom
+$color_4: #570112; //navbar,fotter-top,wstazka,border-description
+$color_5: #96011d; //hover
+$color_6: #4e001000; //navbar-border-bottom
+
+// Hallowen colors
+//$color_1: #1f0e07; //description-background,navbar-border-bottom
+//$color_2: #0d0400; //background
+//$color_3: #682f09; //footer-bottom
+//$color_4: #77350a; //navbar,fotter-top,wstazka,border-description
+//$color_5: #8b4f27; //hover
+
+// orginal colors
+//$dark_0: #121212;
+//$dark_1: #151515;
+//$red_0: #4e000f;
+//$red_1: #570112;
+//$red_2: #96011d;
+//$color_6: #4e001000
+
 // Screen widths which determine device type
 $mobile-width: 768px;
 $big-width: 1366px;
 // Max content size
 $max-width: 850px;
 $max-width-big: 1050px;
-
 // Some basic styling
 html,
 body {
@@ -20,7 +36,8 @@ body {
 body {
   color: #bbb;
   font-size: 16px;
-  background-color: $dark_1;
+  background-color: $color_2;
+  //background-image: url("/static/img/logo/2.png");
   font-family: 'Exo 2', sans-serif;
 }
 
