@@ -27,6 +27,7 @@ $big-width: 1366px;
 // Max content size
 $max-width: 850px;
 $max-width-big: 1050px;
+
 // Some basic styling
 html,
 body {
@@ -43,6 +44,10 @@ body {
 
 a {
   outline: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .aligner {
